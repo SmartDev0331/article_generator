@@ -58,13 +58,13 @@ const ArticleHeadline = () => {
             <div className="flex-1 flex justify-center">
               <span className="mx-auto text-2xl font-bold">Input your article headlines</span>
             </div>
-            <button className=" inline-block" onClick={sendPrompts}>
-              {loading === true ? <span className="flex flex-row justify-center"><Loading />loading...</span> : (
+            <button className="bg-indigo-500 outline-none font-bold text-white inline-block" onClick={sendPrompts}>
+              {loading === true ? <span className="flex flex-row justify-center"><Loading /> Loading...</span> : (
                 <span>Submit</span>
               )}
             </button>
           </div>
-          <textarea className="h-32 w-full py-3 px-5 text-xl rounded-2xl" onChange={e => changePrompts(e.target.value)}></textarea>
+          <textarea className="h-32 w-full py-3 px-5 text-xl rounded-2xl outline-2 outline-blue-500" onChange={e => changePrompts(e.target.value)}></textarea>
         </div>
       </div>
 

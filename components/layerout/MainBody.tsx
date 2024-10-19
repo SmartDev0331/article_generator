@@ -29,7 +29,7 @@ const MainBody = ({ articles }: { articles: ArticleProps[] }) => {
                 <h2 className="text-justify">{children}</h2>
               ),
               h2: ({ children }) => (
-                <h2 className="text-center text-sky-400 text-[18px]">{children}</h2>
+                <h2 className="text-center text-sky-500 text-[18px]">{children}</h2>
               ),
               h1: ({ children }) => (
                 <h2 className="text-center text-3xl text-rose-400">{children}</h2>

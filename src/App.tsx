@@ -7,7 +7,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='bg-gray-300 min-h-full text-black'>
       <Header />
       <ArticleHeadline />
     </div>
