@@ -1,6 +1,8 @@
 import axios from "axios"
 
-const BACKEND_API = "http://127.0.0.1:5000"
+
+const BACKEND_API = import.meta.env.VITE_BACKEND_URL
+
 
 const GenerateAriticle = async (prompts: FormData): Promise<string> => {
   const res = await axios.post(`${BACKEND_API}/generate`, prompts, {

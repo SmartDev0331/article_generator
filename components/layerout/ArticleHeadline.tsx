@@ -29,11 +29,11 @@ const ArticleHeadline = () => {
           toast.error("Failed to merge items");
         } else {
 
-          console.log(res)
+          // console.log(res)
           toast.success("Successfully generate articles");
           if (res && typeof res === 'object' && 'data' in res) {
-            console.log("res---->", res);
-            console.log("res.data---->", res.data);
+            // console.log("res---->", res);
+            // console.log("res.data---->", res.data);
             if (Array.isArray(res.data)) {
               setArticle(res.data as ArticleProps[]);
             }
